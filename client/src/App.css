@@ -1,0 +1,25 @@
+.container {
+  padding: 20px 0px;
+}
+.white-link {
+  color: white;
+}
+.white-link:hover {
+  color: white;
+  text-decoration: line-through;
+}
+.black-link {
+  color: black;
+}
+.black-link:hover {
+  color: black;
+  text-decoration: line-through;
+}
+.trans-black-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.formSection {
+  padding: 0px 15px 15px 15px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
