@@ -4,6 +4,7 @@ import classnames from "classnames";
 export default ({ type, placeholder, name, value, onChange, errors }) => {
   return (
     <div>
+      <label>{placeholder}</label>
       <input
         type={type}
         placeholder={placeholder}

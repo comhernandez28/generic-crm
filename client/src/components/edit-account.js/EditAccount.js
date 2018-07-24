@@ -11,7 +11,7 @@ import DateInput from "../common/DateInput";
 //to redirect on creation
 import { withRouter } from "react-router-dom";
 
-class CreateAccount extends Component {
+class EditAccount extends Component {
   constructor() {
     super();
     this.state = {
@@ -72,6 +72,12 @@ class CreateAccount extends Component {
 
     //dispatch registerUser with account and pass in history so action creator can use it
     this.props.createAccount(newAccount, this.props.history);
+  }
+  componentDidMount() {
+    if (this.props.match.params.id) {
+      console.log(this.props.match.params.id);
+      this.props.getAccountById(this.props.match.params.id);
+    }
   }
   render() {
     const { errors } = this.props;
@@ -392,5 +398,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { createAccount }
+  { createAccount, getAccountById }
 )(withRouter(CreateAccount));
