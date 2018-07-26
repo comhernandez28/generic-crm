@@ -105,7 +105,17 @@ class Dashboard extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm">
-              <BarChart chartData={totalAccountData} />
+              <BarChart
+                chartData={totalAccountData}
+                options={{
+                  title: {
+                    display: true,
+                    text: "Accounts Launched",
+                    fontSize: 20
+                  },
+                  maintainAspectRatio: true
+                }}
+              />
             </div>
           </div>
         </div>
@@ -113,13 +123,27 @@ class Dashboard extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-4">
-              <DoughnutChart chartData={accountServiceData} />
+              <DoughnutChart
+                chartData={accountServiceData}
+                options={{
+                  title: {
+                    display: false
+                  },
+                  maintainAspectRatio: true
+                }}
+              />
+              <br />
+              <h4 className="text-center">Service Type</h4>
             </div>
             <div className="col-sm-4">
               <DoughnutChart chartData={accountStatusData} />
+              <br />
+              <h4 className="text-center">Account Status</h4>
             </div>
             <div className="col-sm-4">
               <DoughnutChart chartData={techStackData} />
+              <br />
+              <h4 className="text-center">Tech Stacks</h4>
             </div>
           </div>
         </div>

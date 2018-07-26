@@ -81,7 +81,8 @@ class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
           <Link className="navbar-brand" to="/">
-            <img
+            CRM
+            {/*<img
               style={{
                 width: "50px",
                 padding: "0",
@@ -90,7 +91,7 @@ class Navbar extends Component {
               }}
               src={logo}
               alt="iZone Marketing"
-            />
+            />*/}
           </Link>
           <button
             className="navbar-toggler"
