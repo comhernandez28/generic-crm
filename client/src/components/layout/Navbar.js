@@ -81,7 +81,7 @@ class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
           <Link className="navbar-brand" to="/">
-            CRM
+            NXT CRM
             {/*<img
               style={{
                 width: "50px",
